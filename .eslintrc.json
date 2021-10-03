@@ -1,0 +1,13 @@
+{
+	"root": true,
+	"extends": "@aduth/eslint-config",
+	"overrides": [
+		{
+			"files": ["**/test/**/*"],
+			"env": {
+				"node": true,
+				"mocha": true
+			}
+		}
+	]
+}
