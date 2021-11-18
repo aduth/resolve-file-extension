@@ -1,6 +1,6 @@
 {
 	"name": "resolve-file-extension",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"description": "Resolve a file path from a base filename",
 	"type": "module",
 	"main": "./resolve.js",
