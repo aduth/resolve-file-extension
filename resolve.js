@@ -20,7 +20,7 @@ import { opendir } from 'fs/promises';
  * @return {Promise<string|undefined>}
  */
 export async function getFilePath(baseFile, extensions) {
-	const { name: baseFileName, dir: baseDir } = parse(baseFile);
+	const { base: baseFileName, dir: baseDir } = parse(baseFile);
 	const entries = await opendir(baseDir);
 	for await (const entry of entries) {
 		if (entry.isFile()) {
